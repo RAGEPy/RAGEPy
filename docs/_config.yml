@@ -1,9 +1,13 @@
 theme: jekyll-theme-architect
 title: RAGEPy Wiki
 description: Official Wiki
-paginate: 5
+
 navbar-links:
   Home: "https://ragepy.github.io/RAGEPy/"
   Examples: "examples"
+
+pagination:
+  enabled: true
+  
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
