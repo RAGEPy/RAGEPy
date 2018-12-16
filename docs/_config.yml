@@ -1,6 +1,7 @@
 theme: jekyll-theme-slate
 title: RAGEPy Wiki
 description: Official Wiki
+paginate: 5
 navbar-links:
   Home: "https://ragepy.github.io/RAGEPy/"
   Examples: "examples"
