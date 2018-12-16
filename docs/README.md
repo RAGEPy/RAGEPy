@@ -14,6 +14,8 @@ Otherwise you can contact us in Discord (but please only on the server and not v
 * [codeacademy](https://www.codecademy.com/learn/learn-python)
 * [Official Python website](https://www.python.org/about/gettingstarted/)
 
+* [Python documentation](https://docs.python.org/2.7/)
+
 ### RAGEPy quick start:
 
 Its very easy to start with RAGEPy.  
