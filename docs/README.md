@@ -1,82 +1,44 @@
-# Home
+# Howdy!
 
-Hi,
+Nice to see you here if you like the programming language Python.  
+In this Wiki you should find everything you need to run your RAGE Multiplayer server with Python.
 
-[Torchpad](http://torchpad.com) is a simple wiki service that can be used anywhere.
-
-Torchpad use the Markdown syntax. You can find out more about it [here](http://markdown.torchpad.com/)
-
-
-## Link to Page
-
-### Simple Link:
-
-```
-[[Home]]
-```
-
-[[Home]]
-
-### Link with name
-
-```
-[[Home page|home]]
-```
-
-[[Home page|home]]
-
-## Drag & Drop Image Upload
+Otherwise you can contact us in Discord (but please only on the server and not via dm).
 
 
-![ZAcpYl2ytb.gif](https://s3-ap-northeast-1.amazonaws.com/torchpad-production/wikis/21/aCrK3ScrRjaPaDUUBioU_ZAcpYl2ytb.gif)
+## Helpful links
 
+### Learn Python:
 
+* [Learn Python](https://www.learnpython.org/)
+* [codeacademy](https://www.codecademy.com/learn/learn-python)
+* [Official Python website](https://www.python.org/about/gettingstarted/)
 
-## Code Snippet Example
+### RAGEPy quick start:
 
-### inline code:
+Its very easy to start with RAGEPy.  
+By default, all events are stored in the Events class. This keeps your code clean.
 
-`inline code`
-
-### Plain Code
-
-```
-puts "Hello World!"
+```python
+class Events:
 ```
 
-### Code with Language
+Let's take the *OnPlayerConnected* event as an example.
 
-```ruby
-puts "Hello World!"
+```python
+class Events:
+	def OnPlayerConnected(self, player):
+		ragepy.Utils().Log("Hello, " + player.Name, True, 10)
 ```
-
-### Code with Title
-
-```ruby hello_world.rb
-puts "Hello World!"
+**What happens in this case?**  
+A green text will be displayed in the console with the player name that has just connected.  
+Why green? We will explain to you.  
+The parameters of *ragepy.Utils().Log* are:
+```python
+Log(self: Utils, text: str, printDate: bool, color: int, *args: Array[object])
 ```
-
-
-## MathJax Example
-
-### Mathjax
-
-```mathjax
-f(n) =
-\begin{cases}
-\frac{n}{2},  & \text{if $n$ is even} \\[2ex]
-3n+1, & \text{if $n$ is odd}  \\
-\end{cases}
-```
-
-### Inline Mathjax
-
-The answser is `$a^2 + b^2 = c^2$`.
-
-## Table Example
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+* *self* you can always ignore
+* *text* is the message that should be displayed in the console
+* *printDate* specifies the current date and time before the actual message is to be output
+* *color* defines the color of the text. all colors can be found here:  [Colors](./colors)
+* *args* are arguments
