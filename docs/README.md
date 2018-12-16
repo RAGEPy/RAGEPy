@@ -1,3 +1,4 @@
+
 # Howdy!
 
 Nice to see you here if you like the programming language Python.  
@@ -25,7 +26,7 @@ By default, all events are stored in the Events class. This keeps your code clea
 class Events:
 ```
 
-Let's take the *OnPlayerConnected* event as an example.
+Let's take the `OnPlayerConnected` event as an example.
 
 ```python
 class Events:
@@ -35,12 +36,12 @@ class Events:
 **What happens in this case?**  
 A green text will be displayed in the console with the player name that has just connected.  
 Why green? We will explain to you.  
-The parameters of *ragepy.Utils().Log* are:
+The parameters of `ragepy.Utils().Log` are:
 ```python
 Log(self: Utils, text: str, printDate: bool, color: int, *args: Array[object])
 ```
-* *self* you can always ignore
-* *text* is the message that should be displayed in the console
-* *printDate* specifies the current date and time before the actual message is to be output
-* *color* defines the color of the text. all colors can be found here:  [Colors](./colors)
-* *args* are arguments
+* `self` you can always ignore
+* `text` is the message that should be displayed in the console
+* `printDate` specifies the current date and time before the actual message is to be output
+* `color` defines the color of the text. all colors can be found here:  [Colors](./colors)
+* `args` are arguments
