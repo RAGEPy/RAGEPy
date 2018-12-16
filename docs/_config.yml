@@ -5,3 +5,5 @@ paginate: 5
 navbar-links:
   Home: "https://ragepy.github.io/RAGEPy/"
   Examples: "examples"
+plugins:
+  - jekyll-paginate
