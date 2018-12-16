@@ -29,9 +29,9 @@
     <header class="page-header" role="banner">
       <a href="https://ragepy.github.io/RAGEPy/" style="color: white; text-decoration: none !important; text-shadow: 2px 2px #000;"><h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1></a>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      <a href="https://discord.gg/3QbwWAe" class="btn">Join Discord</a>
-      <a href="https://github.com/RAGEPy/RAGEPy/issues" class="btn">Issues / Feature requests</a>
-      <a href="./examples" class="btn">Examples</a>
+      <a href="https://discord.gg/3QbwWAe" class="btn" target="_blank">Join Discord</a>
+      <a href="https://github.com/RAGEPy/RAGEPy/issues" class="btn" target="_blank">Issues / Feature requests</a>
+      <a href="./examples" class="btn" target="_blank">Examples</a>
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -39,7 +39,7 @@
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.<br/><a href="https://rage.mp/">RAGE Multiplayer</a></span>
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.<br/><a href="https://rage.mp/" target="_blank">RAGE Multiplayer</a></span>
         {% endif %}
       </footer>
     </main>
